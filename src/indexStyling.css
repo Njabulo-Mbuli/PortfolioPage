@@ -347,7 +347,7 @@ nav > ul > li:hover {
   background-color: red;
   padding: 0.6em;
   box-sizing: border-box;
-  margin: 1.1em 0.2em;
+  margin: 1.25em 0.2em;
 }
 .projectSensor{
   position: absolute;
