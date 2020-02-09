@@ -93,6 +93,14 @@ viewXploraCode = () => {
   window.open("https://github.com/Njabulo-Mbuli/Xplora", "_blank")
 }
 
+viewTracksProject = () => {
+  window.open("http://tracks.njabulombuli.co.za", "_blank")
+}
+
+viewTracksCode = () => {
+  window.open("https://github.com/Njabulo-Mbuli/Tracks", "_blank")
+}
+
 //Scroll Reveal section
 let sectionContainer = document.getElementsByClassName('sectionContainer')
 
