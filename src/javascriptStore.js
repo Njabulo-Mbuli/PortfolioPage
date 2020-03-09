@@ -100,6 +100,13 @@ viewTracksProject = () => {
 viewTracksCode = () => {
   window.open("https://github.com/Njabulo-Mbuli/Tracks", "_blank")
 }
+viewShopProject = () => {
+  window.open("http://shop.njabulombuli.co.za", "_blank")
+}
+
+viewShopCode = () => {
+  window.open("https://github.com/Njabulo-Mbuli/shop", "_blank")
+}
 
 //Scroll Reveal section
 let sectionContainer = document.getElementsByClassName('sectionContainer')
