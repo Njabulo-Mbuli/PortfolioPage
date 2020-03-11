@@ -140,6 +140,3 @@ Array.prototype.forEach.call(project,(element,index,array)=>{
     githubButton.classList.remove("showGithubLink");
   });
 })
-
-// WHY ARE THESE YOUNGSTAS RENOUNCING THE WORLD YOUTUBE SEARCH
-// ochocinco but slap in court room
