@@ -1,10 +1,10 @@
 @font-face {
   font-family: "PermanentMarker";
-  src: url("PermanentMarker.ttf");
+  src: url("../fonts/PermanentMarker.ttf");
 }
 @font-face {
   font-family: "LivvicLightItalic";
-  src: url("Livvic-LightItalic.ttf");
+  src: url("../fonts/Livvic-LightItalic.ttf");
 }
 body{
   font-family: "LivvicLightItalic", sans-serif;
