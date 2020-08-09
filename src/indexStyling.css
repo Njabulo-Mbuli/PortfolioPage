@@ -28,6 +28,24 @@ body {
 ::-webkit-scrollbar-thumb {
   background: black;
 }
+.emailLink{
+ color:white;
+font-size:3em;
+margin:3em 0em;
+}
+.phoneMe{
+ letter-spacing:0em;
+ margin:0em;
+}
+.firstHalfItem{
+ margin:2em 0em;
+ min-width: 40%;
+}
+.phoneNumber{
+ color:white;
+ font-size:2.5em;
+ margin:0.3em 0em;
+}
 .hamburger {
   padding: 15px 15px;
   position: relative;
@@ -297,11 +315,14 @@ nav > ul > li:hover {
   display: flex;
   justify-content: center;
 }
-
+.contactHeading{
+ margin:0.2em 0em;
+}
 #sectionContainer {
   width: 90%;
   min-height: 100vh;
   padding: 0;
+
 }
 #sectionTitle {
   margin: 0;
@@ -451,25 +472,20 @@ nav > ul > li:hover {
 #firstHalf {
   width: 100%;
   display: flex;
-  flex-flow: column;
+  flex-flow: row wrap;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-around;
   text-align: justify;
 }
-.emailLink {
-  position: relative;
-  color: white;
-  font-size: 1.5em;
+.divItem{
+ margin: 2em 3em;
+ min-width: 40%;
 }
-.emailLink:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-bottom: 0px solid white;
-  transition: 0.1s ease-in-out;
+.emailLink {
+ position:relative; 
+ color: white;
+  font-size: 1.5em;
+  margin: 0.3em 0em;
 }
 .emailLink:hover:before {
   border-bottom: 4px solid white;
