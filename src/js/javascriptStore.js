@@ -126,7 +126,7 @@ Array.prototype.forEach.call(sectionContainer, (element,index,array) => {
     .setTween(animateIn)
 })
 
-//Add event listenter to the project sections to show the github logo on mouse enter
+//Add event listener to the project sections to show the github logo on mouse enter
 let project = document.getElementsByClassName('projectSensor');
 
 Array.prototype.forEach.call(project,(element,index,array)=>{
