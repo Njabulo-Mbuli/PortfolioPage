@@ -8,6 +8,7 @@
 }
 body{
   font-family: "LivvicLightItalic", sans-serif;
+  margin:0;
 }
 ::-webkit-scrollbar {
   width: 10px;
