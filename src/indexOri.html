@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Njabulo Mbuli | Fullstack Developer</title>
+	<meta name="keywords" content="Njabulo Mbuli, Njabulo, Mbuli, Web Developer, Frontend, South Africa">
+	<meta name="Description" content="Hi, you can call me Njabulo. I am a Full-stack developer based in
+	Pretoria South Africa. Being a dreamer and a fanatic of all digital things, I have a hard time
+	keeping my fingers off of my keyboard. Most of my free time is spent increasing my knowledge of web
+	development and setting myself new benchmarks to reach.">
+	<link rel="stylesheet" type="text/css" href="css/spinner.css">
+	<link rel="stylesheet" type="text/css" href="css/indexStyling.css">
+	<link rel="stylesheet" type="text/css" href="css/hamburger.css">
+	<link rel="shortcut icon" type="image/x-icon" href="./images/njabulombuli.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="theme-color" content="black">
+</head>
+
+<body onload=showAll() id="body">
+	<div id="loader">
+		<div id="spinner"></div>
+	</div>
+	<div id="top"></div>
+	<div id="navigation">
+		<div id="mobileMenu">
+			<h3 id="menuTitle" class="branding"><a id="mobileTitle" href="http://njabulombuli.co.za">Njabulo Mbuli</a></h3>
+			<nav id="mobileItems">
+				<div id="mobileMenuClickSensor"></div>
+				<ul>
+					<li><a onclick=scrollToElement('about')>Who am I...?</a></li>
+					<li><a onclick=scrollToElement('projects')>Projects</a></li>
+					<li><a onclick=scrollToElement('contact')>Say Hi</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<nav>
+			<h1 class="branding"><a href="http://njabulombuli.co.za">Njabulo Mbuli</a></h1>
+			<ul class="desktopMenu">
+				<li><a href="#about" class="mobileLinks">Who am I...?</a></li>
+				<li><a href="#projects" class="mobileLinks">Projects</a></li>
+				<li><a href="#contact" class="mobileLinks">Say Hi</a></li>
+			</ul>
+			<div class="hamburger hamburger--emphatic" id="hamburger">
+				<div class="hamburger-box">
+					<div class="hamburger-inner">
+					</div>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div id="jumbotron">
+		<div id="jumbotronPoster">
+			<h3 id="subtext">I'll design & build your vision.</h3>
+			<div id="overlay"></div>
+			<img class="jumbotronImage" src="./images/jumbotronPoster.jpg">
+		</div>
+	</div>
+
+	<div id="about">
+		<div id="sectionContainer" class="sectionContainer">
+			<h3 id="sectionTitle">Who am I...?</h3>
+			<section id="sectionContent">
+				<p class="justMe">Hi, you can call me Njabulo. I am a Full-stack developer based in
+					Pretoria South Africa. Being a dreamer and a fanatic of all digital things, I have a hard time
+					keeping my fingers off of my keyboard. Most of my free time is spent increasing my knowledge of web
+					development and setting myself new benchmarks to reach. </br></br> I'm fascinated by the things that
+					were created from thin air, by the imaginations of the people that came before us. I guess it's our turn now...</p>
+				<div class="profPicContainter blockDeco"><img id="profPic" src="./images/MyPic.jpg"></div>
+			</section>
+		</div>
+	</div>
+
+	<div id="projects" class="projects">
+		<div id="sectionContainer" class="sectionContainer">
+			<h3 id="sectionTitle">Projects</h3>
+			<section id="sectionContent">
+				<section class="project blockDeco">
+					
+					<div class="projectOverlay"></div>
+					<div class="projectItems">
+							<div class="projectSensor">
+									<div class="gitHubLink" onclick=viewMovieCode()>
+										<img src="./images/github.png" onclick=viewMovieCode() width="85%" height=auto>
+									</div>
+									</div>
+						<h3>Movie Club</h3>
+						<p class="blurb">This app uses the TMDB API that is full of information on movies.</p>
+						<p class="techUsed">Technologies used: React, React Router, HTML, CSS, JSX and JavaScript</p>
+						<div class="buttonSection">
+							<button class="websiteButton" onclick=viewMovieProject()>View Project</button>
+						</div>
+					</div>
+					<img class="projectBackground" src="./images/movie_club.jpg" alt="movie_club">
+				</section>
+				<section class="project blockDeco">
+					
+					<div class="projectOverlay"></div>
+					<div class="projectItems">
+							<div class="projectSensor">
+									<div class="gitHubLink" onclick=viewXploraCode()>
+										<img src="./images/github.png" width="85%" height=auto/>
+									</div>
+									</div>
+									
+						<h3>Xplora</h3>
+						<p class="blurb">An app that uses the NASA APIs to showcase all of the data that has been
+							collected through
+							all the years of research.
+						</p>
+						<p>Technologies used: React, React Router, Apollo, GraphQL, HTML, JSX and JavaScript</p>
+						<div class="buttonSection">
+							<button class="websiteButton" onclick=viewXploraProject()>View Project</button>
+						</div>
+					</div>
+					<img class="projectBackground" src="./images/xploraPoster.png" alt="xplora">
+				</section>
+				<section class="project blockDeco">
+					
+					<div class="projectOverlay"></div>
+					<div class="projectItems">
+							<div class="projectSensor">
+									<div class="gitHubLink" onclick=viewTracksCode()>
+										<img src="./images/github.png" width="85%" height=auto/>
+									</div>
+									</div>
+									
+						<h3>Tracks</h3>
+						<p class="blurb">
+							Small fullstack project I created to practice working with React in conjunction with Django
+						</p>
+						<p>Technologies used: React, React Router, HTML, JSX, JavaScript, Apollo, Python, Django, GraphQL, Graphene, WSGI and JWT</p>
+						<div class="buttonSection">
+							<button class="websiteButton" onclick=viewTracksProject()>View Project</button>
+						</div>
+					</div>
+					<img class="projectBackground" src="./images/tracks.png" alt="xplora">
+				</section>
+				<section class="project blockDeco">
+					
+					<div class="projectOverlay"></div>
+					<div class="projectItems">
+									
+						<h3>Shop!</h3>
+						<p class="blurb">
+							Fullstack ecommerce app I created using Django and React
+						</p>
+						<p>Technologies used: React, React Router, Redux, HTML, JSX, JavaScript, Apollo, Python, Django, GraphQL, Graphene, WSGI and JWT</p>
+						<div class="buttonSection">
+							<button class="websiteButton" onclick=viewShopProject()>View Project</button>
+						</div>
+					</div>
+					<img class="projectBackground" src="./images/shopPoster.png" alt="xplora">
+				</section>
+			</section>
+			<div class="sectionEnd"></div>
+		</div>
+	</div>
+	<div id="contact">
+		<section id="sectionContainer" class="sectionContainer">
+			<h3 id="sectionTitle">Say Hi</h3>
+			<section id="sectionContent">
+				<div id="firstHalf">
+					<div class="firstHalfItem">
+						<a class="emailLink" href="tel:0749668295">
+							<p class="contactHeading">Give me a call on the following number:</p>
+							<p class="phoneNumber">074-966-8295</p>
+						</a>
+					</div>
+					<div class="firstHalfItem">
+						<a class="emailLink" href="mailto:hopewell.mbuli@gmail.com">
+							<p class="contactHeading">Or you can email me:</p>
+							<p class="emailAddress">hopewell.mbuli@gmail.com</p>
+						</a>
+					</div><p class="contactText firstHalfItem">Always excited to work on different technologies. The most valuable thing I can provide to your company is the ability to be molded to your stack.
+						Feel free to send me an email if there's anything you want to discuss.
+					</p>
+				</div>
+			</section>
+		</section>
+	</div>
+
+	<script type="text/javascript" src="js/ScrollMagic.min.js"></script>
+	<script type="text/javascript" src="js/animation.gsap.min.js"></script>
+	<script type="text/javascript" src="js/TimelineMax.min.js"></script>
+	<script type="text/javascript" src="js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/javascriptStore.js"></script>
+</body>
+</html>
