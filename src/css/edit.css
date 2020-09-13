@@ -1,0 +1,387 @@
+@font-face {
+  font-family: "PermanentMarker";
+  src: url("../fonts/PermanentMarker.ttf");
+}
+@font-face {
+  font-family: "LivvicLightItalic";
+  src: url("../fonts/Livvic-LightItalic.ttf");
+}
+body{
+  font-family: "LivvicLightItalic", sans-serif;
+  margin:0;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: white;
+  border: none;
+}
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+.firstHalfItem{
+ margin:2em 0em;
+ min-width: 40%;
+}
+.phoneNumber{
+ font-weight: bolder;
+}
+.emailAddress{
+  font-weight: bolder;
+}
+a {
+  text-decoration: none;
+  color:black;
+}
+.branding {
+  font-family: "PermanentMarker", sans-serif;
+  font-size: 40px;
+}
+#navigation {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 15;
+  background-color: white;
+}
+nav {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > ul > li {
+  list-style: none;
+  font-size: 1.2em;
+  margin-left: 1em;
+}
+nav > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+nav > ul > li:hover {
+  cursor: pointer;
+}
+#mobileMenu {
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  top: -180vh;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  color: white;
+}
+#mobileMenu > nav {
+  display: flex;
+  justify-content: center;
+}
+#mobileMenu > nav > ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+#mobileMenu > nav > ul > li {
+  padding: 0.9em 0em;
+}
+#mobileMenu > nav > ul > li > a {
+  color: white;
+  margin: 0.5em;
+  padding: 0.5em 0.9em;
+  text-align: center;
+  font-size: 1.5em;
+  transition: 0.5s ease-in-out}
+#jumbotron {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#overlay {
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(250, 250, 250, 0.35);
+}
+.jumbotronImage {
+  display: block;
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#subtext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 80%;
+  height: 30%;
+  font-size: 30px;
+  text-align: center;
+  top: calc(50% - 15%);
+  left: calc(50% - 40%);
+  z-index: 10;
+}
+#about,#projects,#contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contactHeading{
+ margin:0.2em 0em;
+}
+#sectionContainer {
+  width: 90%;
+  min-height: 100vh;
+  padding: 0;
+}
+#sectionTitle {
+  margin: 0 0.5em;
+  font-size: 5em;
+  color: black;
+  transform: translateY(+0.5em);
+}
+#sectionContent {
+  background-color: #2f6f7f;
+  width: 100%;
+  padding: 4em 1em;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  overflow:hidden;
+}
+#sectionContent > p {
+  max-width: 450px;
+}
+#profPic {
+  position: relative;
+  width: 30%;
+  height: 30%;
+  object-fit: cover;
+}
+.project {
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-content: center;
+  width: 30vw;
+  min-width: 300px;
+  height: 30vw;
+  min-height: 300px;
+  background-color: red;
+  padding: 0.6em;
+  box-sizing: border-box;
+  margin: 1.25em 0.2em;
+}
+.projectSensor{
+  position: absolute;
+  width:100%;
+  height:100%;
+  z-index:5;
+  overflow: hidden;
+}
+.projectBackground {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.projectOverlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.68);
+  z-index: 1;
+}
+.projectItems {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
+
+.buttonSection{
+  z-index: 7;
+}
+.websiteButton {
+  border: 2px solid white;
+  padding: 0.2em 0.5em;
+  font-size: 1em;
+  font-weight: bolder;
+  font-family: inherit;
+  transition: 0.2s ease-in-out;
+}
+.websiteButton:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  cursor: pointer;
+}
+.gitHubLink{
+  background-color:white;
+  position:absolute;
+  width:3em;
+  height:4em;
+  display: flex;
+  flex-flow:column;
+  justify-content: center;
+  align-content:center;
+  top:-6em;
+  right:0.8em;
+  z-index: 10;
+  transition: 0.5s ease-in-out;
+}
+.gitHubLink img{
+  margin: 0  auto;
+  z-index: 10;
+}
+.gitHubLink:hover{
+  cursor:pointer;
+}
+.gitHubLink:before{
+  content:'';
+  background-color:inherit;
+  position:absolute;
+  width:100%;
+  height: 100%;
+  transform:skewY(45deg);
+}
+.gitHubLink:after{
+  content:'';
+  background-color: inherit;
+  position: absolute;
+  width:100%;
+  height: 100%;
+  transform:skewY(-45deg);
+}
+.showGithubLink{
+  top:0;
+}
+#firstHalf {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  text-align: justify;
+}
+.divItem{
+ margin: 2em 3em;
+ min-width: 40%;
+}
+.emailLink {
+ position:relative; 
+ color: white;
+  font-size: 1.4em;
+  margin: 0.3em 0em;
+}
+.emailLink:hover:before {
+  border-bottom: 4px solid white;
+}
+.contactText {
+  min-width: 50%;
+}
+#mobileTitle {
+  color: white;
+}
+@media (min-width: 800px) {
+  #mobileMenu > nav > ul > li:hover {
+    letter-spacing: 0.4em;
+  }
+  nav > .desktopMenu {
+    display: none;
+  }
+  #jumbotronPoster {
+    position: absolute;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+  }
+  #profPic {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .profPicContainter{
+    position: relative;
+    width:30%;
+    height:30%;
+    transition:0.5s ease-in-out;
+  }
+  .blockDeco:before {
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #16343b;
+    transform: translateX(1em) translateY(1em);
+    
+  }
+}
+@media (max-width: 800px) {
+  #jumbotronPoster {
+    position: absolute;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    overflow: hidden;
+    width: 100%;
+    height: 40%;
+  }
+  .branding {
+    font-size: 30px;
+  }
+  .desktopMenu {
+    display: none;
+  }
+  #sectionTitle {
+    font-size: 2.5em;
+  }
+  #profPic {
+    position: relative;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .profPicContainter{
+    width:100%;
+    position: relative;
+  }
+  .blockDeco:before {
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #16343b;
+    transform: translateX(0.5em) translateY(0.5em);
+  }
+  .gitHubLink{
+    top:0;
+  }
+}
