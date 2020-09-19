@@ -99,7 +99,7 @@
     text-align: center;
     font-size: 1.5em;
     transition: 0.5s ease-in-out}
-  #menuTitle{
+  #mobileTitle{
     z-index: 150;
   }
   #jumbotron {
